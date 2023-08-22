@@ -5,6 +5,7 @@ import CreateDevice from "./Pages/CreateDevice";
 import DeviceList from "./Pages/ApplianceList";
 
 export default function App() {
-  //return <CreateAccount />;
-  return <PassCode />;
+  return (
+    <DeviceList />
+  );
 }

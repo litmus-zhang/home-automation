@@ -37,17 +37,6 @@ export default function CreateDevice() {
           />
         </FormControl>
         <FormControl>
-          <FormControl.Label>Email</FormControl.Label>
-          <Input
-            p={2}
-            colorScheme={"purple"}
-            placeholder="Adebisihenry@gmail.com"
-            type="text"
-            value={text}
-            onChangeText={(text) => setText(text)}
-          />
-        </FormControl>
-        <FormControl>
           <FormControl.Label>Owner</FormControl.Label>
           <Select
             placeholder="Select"

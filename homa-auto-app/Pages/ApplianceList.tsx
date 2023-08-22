@@ -1,20 +1,35 @@
 import React from "react";
 import Container from "../layout/container";
-import { ScrollView, Text, VStack } from "native-base";
+import { Button, ScrollView, Text, VStack, Icon } from "native-base";
 import { CardItem } from "../components/CardItem";
+import { Ionicons } from "@expo/vector-icons";
+
 
 export default function DeviceList() {
   return (
-    <Container title="Home">
-      <ScrollView w={"100%"} p={3}>
+    <Container title="My Devices">
+      <Button
+        my={3}
+          rounded={"md"}
+          variant={"solid"}
+          rightIcon={<Icon as={<Ionicons name="add" />} size="sm" />}
+          colorScheme={"purple"}
+        >
+          Add New Device
+        </Button>
+      <ScrollView w={"100%"} p={3} my={2}>
         <VStack flexWrap={"wrap"} space={3}>
-          {["Card 1", "Card 2", "Card 3", "Card 4", "Card 5"].map(
-            (item, index) => (
-              <CardItem key={index}>
-                <Text>{item}</Text>
-              </CardItem>
-            )
-          )}
+          {[
+            "Front Door",
+            "Parlour Switch",
+            "Main Gate",
+            "Living Room Switch",
+            "Living Room Socket",
+          ].map((item, index) => (
+            <CardItem key={index}>
+              <Text>{item}</Text>
+            </CardItem>
+          ))}
         </VStack>
       </ScrollView>
     </Container>

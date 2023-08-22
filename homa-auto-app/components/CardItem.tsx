@@ -1,4 +1,4 @@
-import { Center } from "native-base";
+import { Button, Center } from "native-base";
 import React from "react";
 
 interface CardItemProps {
@@ -18,6 +18,9 @@ export const CardItem = ({ children }: CardItemProps) => {
       shadow={2}
     >
       {children}
+      <Button colorScheme={"purple"} variant={"outline"}>
+        Edit device
+      </Button>
     </Center>
   );
 };

@@ -21,9 +21,9 @@ export default function PassCode() {
     "Dr. Reginald",
   ];
   return (
-    <Container title="Create Device">
+    <Container title="Access Device">
       <Stack space={2} w={"100%"} px={4}>
-        <Text>Input Pass Code for "Device Name"</Text>
+        <Text>Input Pass Code for Front Door</Text>
         <FormControl>
           <Input
             p={2}
