@@ -1,0 +1,13 @@
+# Python FastAPI Project Template
+
+
+**/venv/
+**/pycache/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+
+
+
+# Nodejs 
+**/node_modules/
